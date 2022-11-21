@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Slider.scss";
+import styles from "./Slider.module.scss";
 import { FiChevronLeft as Left, FiChevronRight as Right } from "react-icons/fi";
 import { BsDot as Dot } from "react-icons/bs";
 
@@ -27,20 +27,23 @@ const Slider = ({ slides }) => {
 
   return (
     <>
-      <div className="sliderStyles">
+      <div className={styles.sliderStyles}>
         <div className="">
-          <div className="leftArrowStyles" onClick={goToPrevious}>
+          <div className={styles.leftArrowStyles} onClick={goToPrevious}>
             <Left />
           </div>
-          <div className="rightArrowStyles" onClick={goToNext}>
+          <div className={styles.rightArrowStyles} onClick={goToNext}>
             <Right />
           </div>
         </div>
-        <div className="slideStyles" style={slideStylesWidthBackground}></div>
-        <div className="dotContainerStyles">
+        <div
+          className={styles.slideStyles}
+          style={slideStylesWidthBackground}
+        ></div>
+        <div className={styles.dotContainerStyles}>
           {slides.map((slide, index) => (
             <div
-              className="dotStyle"
+              className={styles.dotStyle}
               key={index}
               onClick={() => {
                 goToSlide(index);

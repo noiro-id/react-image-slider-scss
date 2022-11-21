@@ -1,5 +1,5 @@
 import React from "react";
-import "./ContainerStyle.scss";
+import styles from "./ContainerStyle.module.scss";
 import {
   slideImg1,
   slideImg2,
@@ -35,7 +35,7 @@ const App = () => {
 
   return (
     <>
-      <div className="containerStyles">
+      <div className={styles.containerStyles}>
         <Slider slides={slides} />
       </div>
     </>
