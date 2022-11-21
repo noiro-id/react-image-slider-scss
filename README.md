@@ -1,3 +1,8 @@
+# Note about this code
+
+This is my version of Image Slider based of [https://github.com/monsterlessonsacademy/monsterlessonsacademy/tree/221-react-image-slider](Monster Lesson Academy).
+I implemented scss and structured folder for my own needs later.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
